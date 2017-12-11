@@ -9,7 +9,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "/home/hiago/Documents/webcanvas/index.html",
+            "url": "/home/hiago/Documents/webcanvas/index.html"
             //"url":"/home/hiago/Documents/webcanvas",
             //"webRoot": "/home/hiago/Documents/webcanvas"
         }
