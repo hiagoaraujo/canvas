@@ -11,7 +11,9 @@
  <canvas id="c" width="800" height="600"></canvas>
     <script>
     var canvas = new fabric.Canvas('c');
-
+   
+    var text = new fabric.Text('hello world', { left: 100, top: 100 });
+canvas.add(text);
     // create a rectangle object
     var rect = new fabric.Rect({
         left: 100,
@@ -22,6 +24,28 @@
     });
     // "add" rectangle onto canvas
     canvas.add(rect);
+
+    var circle = new fabric.Circle({
+  radius: 100,
+  fill: '#eef',
+  scaleY: 0.5,
+  originX: 'center',
+  originY: 'center'
+});
+
+var text = new fabric.Text('hello world', {
+  fontSize: 30,
+  originX: 'center',
+  originY: 'center'
+});
+
+var group = new fabric.Group([ circle, text ], {
+  left: 150,
+  top: 100,
+  angle: -10
+});
+
+canvas.add(group);
     </script>
 </body>
 </html>
